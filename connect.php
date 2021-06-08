@@ -6,9 +6,6 @@ define('DB_PASSWORD', '');
 define('DB_NAME', 'spitogatos');
 
 header('Content-Type: text/html; charset=UTF-8');
-
-
-
  
 /* Attempt to connect to MySQL database */
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
