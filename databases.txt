@@ -1,0 +1,21 @@
+Για την δημιουργία της βάσης δεδομένων και των δύο tables που χρησιμοποιήσαμε, 
+users και aggelies δίνουμε τον παρακάτω κώδικα σε mysql:
+
+create database spitogatos; //δημιουργούμε μια βαση με ονομα spitogatos
+
+create table users //πίνακας με username και password των χρηστών 
+(
+id int(11) not null auto_increment primary key,
+username varchar(50) not null,
+password varchar(255) not null
+);
+
+create table aggelies //πίνακας με αγγελίες των χρηστών
+(
+id int(11) not null auto_increment primary key,
+username varchar(50) not null,
+price int(11) not null,
+region varchar(50) not null,
+availability varchar(50) not null,
+area int(11) not null
+);
